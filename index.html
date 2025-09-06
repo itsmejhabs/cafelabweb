@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Café lab</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#rating">Rate Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme" title="Toggle theme" type="button">
+                        <svg class="icon-sun" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"/>
+                            <line x1="12" y1="2" x2="12" y2="6"/>
+                            <line x1="12" y1="18" x2="12" y2="22"/>
+                            <line x1="2" y1="12" x2="6" y2="12"/>
+                            <line x1="18" y1="12" x2="22" y2="12"/>
+                            <line x1="4.2" y1="4.2" x2="6.8" y2="6.8"/>
+                            <line x1="17.2" y1="17.2" x2="19.8" y2="19.8"/>
+                            <line x1="4.2" y1="19.8" x2="6.8" y2="17.2"/>
+                            <line x1="17.2" y1="6.8" x2="19.8" y2="4.2"/>
+                        </svg>
+                        <svg class="icon-moon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21 12.5a8.5 8.5 0 1 1-9.8-9.4 7 7 0 0 0 9.8 9.4z"/>
+                        </svg>
+                        <span class="theme-label" id="themeLabel">Light Mode</span>
+                    </button>
+                </li>
+                <li class="mobile-theme-item">
+                    <button id="themeToggleMobile" class="theme-btn-mobile" aria-label="Toggle theme" title="Toggle theme" type="button">
+                        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"/>
+                            <line x1="12" y1="2" x2="12" y2="6"/>
+                            <line x1="12" y1="18" x2="12" y2="22"/>
+                            <line x1="2" y1="12" x2="6" y2="12"/>
+                            <line x1="18" y1="12" x2="22" y2="12"/>
+                            <line x1="4.2" y1="4.2" x2="6.8" y2="6.8"/>
+                            <line x1="17.2" y1="17.2" x2="19.8" y2="19.8"/>
+                            <line x1="4.2" y1="19.8" x2="6.8" y2="17.2"/>
+                            <line x1="17.2" y1="6.8" x2="19.8" y2="4.2"/>
+                        </svg>
+                        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21 12.5a8.5 8.5 0 1 1-9.8-9.4 7 7 0 0 0 9.8 9.4z"/>
+                        </svg>
+                        <span class="theme-label-mobile" id="themeLabelMobile">Light Mode</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="controls">
+                <button class="login-btn" id="loginBtn" aria-label="Login" title="Login" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                        <polyline points="10,17 15,12 10,7"/>
+                        <line x1="15" y1="12" x2="3" y2="12"/>
+                    </svg>
+                    <span class="login-text">Login</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle menu" type="button">☰</button>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="section home-section">
+        <div class="container">
+            <h1>Welcome to Café lab</h1>
+            <p>Your cozy spot for coffee, pastries, and connection.</p>
+        </div>
+    </section>
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>Café lab</h2>
+            <p>Café lab is a community hub for students, professionals, and families. We offer high-quality coffee, fresh pastries, and a welcoming atmosphere for all.</p>
+        </div>
+    </section>
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <h2>Menu</h2>
+            
+            <!-- Drinks Section -->
+            <div class="menu-category">
+                <h3 class="category-title">Drinks</h3>
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://i.pinimg.com/736x/ab/d4/3a/abd43a6d3aa0c685da4e0ae3bdcd6693.jpg" alt="Espresso" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Espresso</h3>
+                                <span class="price">Rs299</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Espresso</h3> <span class="price">Rs299</span>
+                                <p>Rich, bold shot with crema. The pure essence of coffee.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://cdn.pixabay.com/photo/2017/06/22/15/21/latte-art-2431160_1280.jpg" alt="Cappuccino" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Cappuccino</h3>
+                                <span class="price">Rs350</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Cappuccino</h3>
+                                <p>Equal parts espresso, steamed milk, and foam.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://cdn.pixabay.com/photo/2020/02/07/21/06/coffee-4828393_1280.jpg" alt="Latte" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Latte</h3>
+                                <span class="price">Rs399</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Latte</h3>
+                                <p>Smooth espresso with velvety steamed milk.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://media.istockphoto.com/id/2205657392/photo/cup-of-coffee.jpg?s=612x612&w=0&k=20&c=r2SwrZ6-xT1ZEUlKAzttYPSP_dOZoLzLie0D4dDYxDw=" alt="Mocha" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Mocha</h3>
+                                <span class="price">Rs499</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Mocha</h3>
+                                <p>Chocolate-kissed latte topped with foam.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://dyvn6jpt1f0d3.cloudfront.net/wp-content/uploads/2021/04/22131459/WIDE_HD_1920X1080-FMC-Recipe_Vietnamese-Iced-Coffee-40-2.jpg" alt="Iced Coffee" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Iced Coffee</h3>
+                                <span class="price">Rs320</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Iced Coffee</h3>
+                                <p>Refreshing cold brew with ice cubes.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="data:image/jpeg;base64,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" alt="Matcha Latte" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Matcha Latte</h3>
+                                <span class="price">Rs450</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Matcha Latte</h3>
+                                <p>Premium green tea powder with steamed milk.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="data:image/jpeg;base64,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" alt="Smoothies" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Smoothies</h3>
+                                <span class="price">Rs420</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Smoothies</h3>
+                                <p>Fresh fruit blends with yogurt and ice.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Food Section -->
+            <div class="menu-category">
+                <h3 class="category-title">Food</h3>
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" alt="Fresh Pastries" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Fresh Pastries</h3>
+                                <span class="price">Rs250</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Fresh Pastries</h3>
+                                <p>Daily baked croissants, muffins, and more.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotxo9lPu9zHHUBOVqAR-6nDQjvbybmDyC-Q&s" alt="Sandwiches" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Sandwiches</h3>
+                                <span class="price">Rs580</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Sandwiches</h3>
+                                <p>Hearty, fresh fillings on artisanal bread.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="face face1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJfv9L2vhr6h5Eu4XU4xRf2b4nniRqzE1HIA&s" alt="Cheesecake" class="menu-image" loading="lazy">
+                            <div class="content">
+                                <h3>Cheesecake</h3>
+                                <span class="price">Rs380</span>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>Cheesecake</h3>
+                                <p>Rich, creamy dessert with berry topping.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://cdn.pixabay.com/photo/2017/06/22/15/21/latte-art-2431160_1280.jpg" alt="Coffee 1" class="gallery-img" loading="lazy">
+                <img src="https://cdn.pixabay.com/photo/2020/02/07/21/06/coffee-4828393_1280.jpg" alt="Coffee 2" class="gallery-img" loading="lazy">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" alt="Pastry 1" class="gallery-img" loading="lazy">
+                <img src="https://cdn.pixabay.com/photo/2014/10/04/07/40/cafe-472656_1280.jpg" alt="Cafe Interior" class="gallery-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+    
+    <section id="rating" class="section rating-section">
+        <div class="container">
+            <h2>Rate Us</h2>
+            <div class="rating" id="ratingWidget" aria-label="Rate our cafe" role="radiogroup">
+                <button class="star" data-value="1" aria-label="1 star" role="radio" aria-checked="false">★</button>
+                <button class="star" data-value="2" aria-label="2 stars" role="radio" aria-checked="false">★</button>
+                <button class="star" data-value="3" aria-label="3 stars" role="radio" aria-checked="false">★</button>
+                <button class="star" data-value="4" aria-label="4 stars" role="radio" aria-checked="false">★</button>
+                <button class="star" data-value="5" aria-label="5 stars" role="radio" aria-checked="false">★</button>
+            </div>
+            <p id="ratingMessage" class="rating-message">Tap a star to rate your experience.</p>
+            
+            <!-- Rating Statistics -->
+            <div class="rating-stats">
+                <h3>Customer Reviews</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="star-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count" id="count5">0</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress5" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="star-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count" id="count4">0</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress4" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="star-rating">
+                            <span class="stars">★★★☆☆</span>
+                            <span class="count" id="count3">0</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress3" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="star-rating">
+                            <span class="stars">★★☆☆☆</span>
+                            <span class="count" id="count2">0</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress2" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="star-rating">
+                            <span class="stars">★☆☆☆☆</span>
+                            <span class="count" id="count1">0</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress1" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-reviews">
+                    <span id="totalReviews">0</span> total reviews
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact us</h2>
+            <form class="contact-form" id="contactForm">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" placeholder="Your Name" required>
+                <label for="userEmail">Your Email</label>
+                <input type="email" id="userEmail" placeholder="Your Email" required>
+                <label for="userMessage">Your Message</label>
+                <textarea id="userMessage" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="successMessage" style="display: none; color: green; text-align: center; margin-top: 20px;">
+                Thank you! Your message has been sent successfully.
+            </div>
+            <div id="errorMessage" style="display: none; color: red; text-align: center; margin-top: 20px;">
+                Sorry, there was an error sending your message. Please try again.
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Café Lab is a community hub for students, professionals, and families. We offer high-quality coffee, fresh pastries, and a welcoming atmosphere for all.</p>
+                    <div class="social-links">
+                        <a href="#">
+                            <img src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png" alt="Facebook" width="40">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/?size=50&id=32309&format=png" alt="Instagram" width="40">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/?size=48&id=qNUNvR9aEWql&format=png" alt="Linkedin" width="40">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/?size=50&id=Oj1XykSGtaMF&format=gif" alt="twitter" width="40">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <p><strong>📍 Address:</strong><br>123 Coffee Street<br>Your City, State 12345</p>
+                        <p><strong>📞 Phone:</strong><br>(123) 456-7890</p>
+                        <p><strong>✉️ Email:</strong><br>info@cafelab.com</p>
+                        <p><strong>🕒 Hours:</strong><br>Mon-Fri: 7:00 AM - 8:00 PM<br>Sat-Sun: 8:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#rating">Rate Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Café Lab. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Offers Popup -->
+    <div id="offersPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>🎉 Current Offers</h2>
+                <button class="popup-close" id="popupClose" aria-label="Close offers">×</button>
+            </div>
+            <div class="popup-body">
+                <div class="offer-item">
+                    <div class="offer-icon">☕</div>
+                    <div class="offer-details">
+                        <h3>Happy Hour Coffee</h3>
+                        <p>50% off on all coffee drinks</p>
+                        <span class="offer-time">3:00 PM - 5:00 PM Daily</span>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <div class="offer-icon">🥐</div>
+                    <div class="offer-details">
+                        <h3>Pastry Combo Deal</h3>
+                        <p>Buy 2 pastries, get 1 free</p>
+                        <span class="offer-time">All Day</span>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <div class="offer-icon">🎂</div>
+                    <div class="offer-details">
+                        <h3>Weekend Special</h3>
+                        <p>Free dessert with any main course</p>
+                        <span class="offer-time">Saturday & Sunday</span>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <div class="offer-icon">👥</div>
+                    <div class="offer-details">
+                        <h3>Group Discount</h3>
+                        <p>20% off for groups of 4 or more</p>
+                        <span class="offer-time">Valid until month end</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="offer-btn" id="claimOffer">Claim Offers</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Popup -->
+    <div id="loginPopup" class="popup-overlay">
+        <div class="popup-content login-popup">
+            <div class="popup-header">
+                <h2>🔑 Login to Café Lab</h2>
+                <button class="popup-close" id="loginClose" aria-label="Close login">×</button>
+            </div>
+            <div class="popup-body">
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-submit-btn">Login</button>
+                    <div class="login-divider">
+                        <span>or</span>
+                    </div>
+                    <div class="social-login">
+                        <button type="button" class="social-btn google-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.84.81-.62z"/>
+                                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                            </svg>
+                            Continue with Google
+                        </button>
+                        <button type="button" class="social-btn facebook-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                            Continue with Facebook
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-footer">
+                <p class="signup-link">Don't have an account? <a href="#" id="signupLink">Sign up here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
